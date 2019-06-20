@@ -1,54 +1,36 @@
 # MirrorModRemoteConfiguredMods
-mirror rotation configurations for other mods
+This is the public mirror of a configuration file in the Mirror Mod, read from to load part's mirrored rotation configurations for foreign mods. If you want your mod to be automatically compatible with the mirror mod, first create a mirror configuration [as shown in this video](https://youtu.be/5VuLQEuy1BI?t=504). Then create files from the logged configurations, place them somewhere in your mod's folder and note the paths of those files inside your new json, which should be added here in config.json.
 
-## How to create a new mirror rotation configuration for the parts of your mod? 
+## Creating an entry in config.json to add your mod
 
 --> youtube link to be added
-### Steps:
 
---> TODO
+## Example
 
-## How to make sure the mirror mod supports your mod?
+For each of your mods you want to add compatibility for, add a new JSON object containing the keys "localId", "partDefinitionPaths" and "mirrorDefinitionPaths" like so:
 
-just edit the config.json to include your mod.
-example:
 ```js
-{
-    "mods":[
         {
-            //already existing mod in the config
-            //https://steamcommunity.com/sharedfiles/filedetails/?id=someID
-            "localId":"11111111-1111-1111-1111-111111111111",
-            "partDefinitionPaths":[
-                "Objects/Database/ShapeSets/parts.json"
-            ],
-            "mirrorDefinitionPaths":[
-                "Objects/Database/ShapeSets/mirrored/mirror.json"
-            ]
-        }
-	,
-        {
-            //YOUR MOD NAME HERE
-            //https://steamcommunity.com/sharedfiles/filedetails/?id=workshoplink
-            "localId":"11111111-1111-1111-1111-111111111111",  // your mod localId, you can find this in the description.json of your mod
-            "partDefinitionPaths":[  // this is an array containing all the paths to the json files defining your parts
+            // <YOUR MOD NAME HERE>
+            // <YOUR MOD'S WORKSHOP LINK>
+            "localId":"11111111-1111-1111-1111-111111111111",  // Your mod's localId, found in the description.json of your mod
+            "partDefinitionPaths":[  // An array containing all the paths to the part definition files.
                 "Objects/Database/ShapeSets/parts.json",
                 "Objects/Database/ShapeSets/otherparts.json",
                 "Objects/Database/ShapeSets/parts.json"
             ],
-            "mirrorDefinitionPaths":[ // this is an array containing the paths to the json files defining the mirror rotations for your parts.
+            "mirrorDefinitionPaths":[ // An array containing the paths to the json files defining the mirror rotations for your parts
                 "Objects/Database/ShapeSets/mirrored/mirror.json"
             ]
         }
-		
-    ]
-}
 ```
 
-## Q&A:
+#### Be sure to correctly add commas, as pull requests creating invalid JSON will not be accepted until fixed.
 
-### Why can you not generate an algorithm?
+## Q & A:
 
-### Why do you need the paths to the json files defining my parts?
+### Why do you need the paths to the json files defining my parts
+In order to prevent mod A from overwriting the mirrored rotations for a part from mod B, the mirror mod will need access to the part UUIDs of mod A. Thus, if mod A defines mirrored rotations for parts of mod B, this is considered an illegal configuration.
 
-### Why would i create multiple paths for the mirror definitions? The Mirror Mod only spits out one json when configuring mirror rotations.
+### Why would I create multiple paths for the mirror definitions? The Mirror Mod only spits out one json when configuring mirror rotations.
+Just like the game allows multiple part definition files, the Mirror Mod does too. This allows organizing parts.
