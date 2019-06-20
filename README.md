@@ -1,4 +1,4 @@
-# MirrorModRemoteConfiguredMod
+# MirrorModRemoteConfiguredMods
 mirror rotation configurations for other mods
 
 ## How to create a new mirror rotation configuration for the parts of your mod? 
