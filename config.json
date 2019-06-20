@@ -8,7 +8,7 @@
                 "Objects/Database/ShapeSets/parts.json"
             ],
             "mirrorDefinitionPaths": [
-                "Objects/Database/ShapeSets/mirrored/mirror.json"
+                "Objects/Database/ShapeSets/mirrored/mirrored.json"
             ]
         }
     ]
