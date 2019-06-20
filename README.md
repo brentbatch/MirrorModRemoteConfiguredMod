@@ -12,7 +12,7 @@ mirror rotation configurations for other mods
 
 just edit the config.json to include your mod.
 example:
-```json
+```js
 {
     "mods":[
         {
