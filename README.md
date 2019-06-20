@@ -26,7 +26,7 @@ example:
                 "Objects/Database/ShapeSets/mirrored/mirror.json"
             ]
         }
-		,
+	,
         {
             //YOUR MOD NAME HERE
             //https://steamcommunity.com/sharedfiles/filedetails/?id=workshoplink
