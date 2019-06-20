@@ -25,7 +25,8 @@ For each of your mods you want to add compatibility for, add a new JSON object c
         }
 ```
 
-#### Be sure to correctly add commas, as pull requests creating invalid JSON will not be accepted until fixed.
+#### Be sure to include your mod's name, workshop page and correctly add commas.
+#### Pull requests creating invalid JSON or not being up to spec will not be accepted until fixed.
 
 ## Q & A:
 
