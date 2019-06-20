@@ -13,13 +13,13 @@ For each of your mods you want to add compatibility for, add a new JSON object c
         {
             // <YOUR MOD NAME HERE>
             // <YOUR MOD'S WORKSHOP LINK>
-            "localId":"11111111-1111-1111-1111-111111111111",  // Your mod's localId, found in the description.json of your mod
-            "partDefinitionPaths":[  // An array containing all the paths to the part definition files.
+            "localId": "11111111-1111-1111-1111-111111111111",  // Your mod's localId, found in the description.json of your mod
+            "partDefinitionPaths": [  // An array containing all the paths to the part definition files.
                 "Objects/Database/ShapeSets/parts.json",
                 "Objects/Database/ShapeSets/otherparts.json",
                 "Objects/Database/ShapeSets/parts.json"
             ],
-            "mirrorDefinitionPaths":[ // An array containing the paths to the json files defining the mirror rotations for your parts
+            "mirrorDefinitionPaths": [ // An array containing the paths to the json files defining the mirror rotations for your parts
                 "Objects/Database/ShapeSets/mirrored/mirror.json"
             ]
         }
