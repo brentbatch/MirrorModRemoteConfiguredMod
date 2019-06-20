@@ -34,4 +34,4 @@ For each of your mods you want to add compatibility for, add a new JSON object c
 In order to prevent mod A from overwriting the mirrored rotations for a part from mod B, the mirror mod will need access to the part UUIDs of mod A. Thus, if mod A defines mirrored rotations for parts of mod B, this is considered an illegal configuration.
 
 ### Why would I create multiple paths for the mirror definitions? The Mirror Mod only spits out one json when configuring mirror rotations.
-Just like the game allows multiple part definition files, the Mirror Mod does too. This allows organizing parts.
+Just like the game allows multiple part definition files, the Mirror Mod does too. This allows organizing parts into seperate files.
