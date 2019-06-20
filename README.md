@@ -35,3 +35,7 @@ In order to prevent mod A from overwriting the mirrored rotations for a part fro
 
 ### Why would I create multiple paths for the mirror definitions? The Mirror Mod only spits out one json when configuring mirror rotations.
 Just like the game allows multiple part definition files, the Mirror Mod does too. This allows organizing parts into seperate files.
+
+## Notes
+
+The config.json must include comments including some mod infos, but technically those comments are invalid JSON. The SM json parser however ignores comments. GitHub just displays those comments as red because it finds invalid syntax. This can be ignored, or seen as a nice info highlight.
