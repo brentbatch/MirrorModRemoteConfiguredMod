@@ -36,7 +36,7 @@ example:
                 "Objects/Database/ShapeSets/otherparts.json",
                 "Objects/Database/ShapeSets/parts.json"
             ],
-            "mirrorDefinitionPaths":[ // this is an array containing the paths to the json files containing the mirror rotation definitions for your parts.
+            "mirrorDefinitionPaths":[ // this is an array containing the paths to the json files defining the mirror rotations for your parts.
                 "Objects/Database/ShapeSets/mirrored/mirror.json"
             ]
         }
