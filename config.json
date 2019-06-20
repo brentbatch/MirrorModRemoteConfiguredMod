@@ -1,0 +1,15 @@
+{
+    "mods":[
+        {
+            //Wings
+            //https://steamcommunity.com/sharedfiles/filedetails/?id=1390938191
+            "localId":"df10d497-a28e-4413-a707-5a07813aec37",
+            "partDefinitionPaths":[
+                "Objects/Database/ShapeSets/parts.json"
+            ],
+            "mirrorDefinitionPaths":[
+                "Objects/Database/ShapeSets/mirrored/mirror.json"
+            ]
+        }
+    ]
+}
